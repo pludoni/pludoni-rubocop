@@ -43,7 +43,7 @@ Style/IfUnlessModifier:
   Enabled: false
 Metrics/MethodLength:
   Enabled: false
-Metrics/LineLength:
+Layout/LineLength:
   Max: 150
   Exclude:
     - spec/**/*
@@ -67,8 +67,6 @@ Layout/HashAlignment:
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
-Style/FrozenStringLiteralComment:
-  Enabled: false
 # class Admin::PageController
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -95,7 +93,7 @@ Style/WordArray:
   Enabled: false
 # RSpec nervt
 Metrics/BlockLength:
-  ExcludedMethods: ['task', 'namespace', 'get', 'post', 'describe', 'context', 'specify', 'it', 'route_param', 'draw', 'register', 'register_page', 'controller', 'included', 'params', 'resource', 'with_options', 'use_cassette', 'configure', 'transaction']
+  AllowedMethods: ['task', 'namespace', 'get', 'post', 'describe', 'context', 'specify', 'it', 'route_param', 'draw', 'register', 'register_page', 'controller', 'included', 'params', 'resource', 'with_options', 'use_cassette', 'configure', 'transaction']
 Bundler/OrderedGems:
   Enabled: false
 # update_all, update_column
@@ -155,6 +153,4 @@ Performance/Casecmp:
 Lint/SuppressedException:
   Enabled: false
 Style/NegatedIf:
-  Enabled: false
-Style/ClassVars:
   Enabled: false
