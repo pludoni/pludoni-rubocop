@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "lib/pludoni/rubocop/version"
-
 Gem::Specification.new do |spec|
   spec.name = "pludoni-rubocop"
   spec.version = "1.37.0"
