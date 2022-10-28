@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   spec.add_dependency 'rubocop', '~> 1.37.0'
   spec.add_dependency 'rubocop-rails', '~> 2.17.2'
-  spec.add_dependency 'rubocop-performance', '~> 1.15.1'
+  spec.add_dependency 'rubocop-performance', '~> 1.15.0'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
