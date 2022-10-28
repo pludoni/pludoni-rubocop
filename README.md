@@ -8,6 +8,14 @@ Install the gem and add to the application's Gemfile by executing:
 
     bundle add pludoni-rubocop --git https://github.com/pludoni/pludoni-rubocop.git
 
+Or add manually to Gemfile:
+
+```ruby
+group :development, :test do
+  gem 'pludoni-rubocop', git: 'https://github.com/pludoni/pludoni-rubocop.git', require: false
+end
+```
+
 ## Usage
 
 Add to ``.rubocop.yml``:
