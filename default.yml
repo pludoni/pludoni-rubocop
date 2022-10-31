@@ -154,3 +154,5 @@ Lint/SuppressedException:
   Enabled: false
 Style/NegatedIf:
   Enabled: false
+Style/QuotedSymbols:
+  Enabled: false
