@@ -27,6 +27,15 @@ inherit_gem:
     - rails.yml
 ```
 
+If you have a ``.codeclimate.yml`` change it to match the Rubocop version:
+
+```yaml
+# .codeclimate.yml
+plugins:
+  rubocop:
+    enabled: true
+    channel: rubocop-1-37
+```
 
 ## License
 
