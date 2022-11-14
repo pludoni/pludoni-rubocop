@@ -156,3 +156,5 @@ Style/NegatedIf:
   Enabled: false
 Style/QuotedSymbols:
   Enabled: false
+Metrics/ParameterLists:
+  CountKeywordArgs: false
