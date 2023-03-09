@@ -1,4 +1,6 @@
-# Pludoni::Rubocop
+# Pludoni Rubocop
+
+[![Gem Version](https://badge.fury.io/rb/pludoni-rubocop.svg)](https://badge.fury.io/rb/pludoni-rubocop)
 
 Rubocop shared Gem config for our company projects
 
@@ -12,7 +14,7 @@ Or add manually to Gemfile:
 
 ```ruby
 group :development, :test do
-  gem 'pludoni-rubocop', git: 'https://github.com/pludoni/pludoni-rubocop.git', require: false
+  gem 'pludoni-rubocop', require: false
 end
 ```
 
