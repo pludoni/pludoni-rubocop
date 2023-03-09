@@ -1,0 +1,53 @@
+# from: https://github.com/Betterment/betterlint/blob/main/config/default.yml
+require:
+  - rubocop/cop/betterment.rb
+
+Betterment:
+  StyleGuideBaseURL: https://github.com/Betterment/betterlint
+Betterment/ServerErrorAssertion:
+  Description: 'Detects assertions on 5XX HTTP statuses.'
+  Include:
+    - 'spec/requests/**/*_spec.rb'
+Betterment/AuthorizationInController:
+  Description: 'Detects unsafe handling of id-like parameters in controllers.'
+  StyleGuide: '#bettermentauthorizationincontroller'
+  Enabled: true
+# Betterment/UnsafeJob:
+#   Enabled: true
+#   StyleGuide: '#bettermentunsafejob'
+#   sensitive_params:
+#     - password
+#     - social_security_number
+#     - ssn
+Betterment/UnscopedFind:
+  StyleGuide: '#bettermentunscopedfind'
+
+Betterment/DynamicParams:
+  StyleGuide: '#bettermentdynamicparams'
+
+# Betterment/SitePrismLoaded:
+#   Include:
+#     - 'spec/features/**/*_spec.rb'
+#     - 'spec/system/**/*_spec.rb'
+
+Betterment/NonStandardActions:
+  Description: 'Detects non-standard controller actions.'
+  StyleGuide: '#bettermentnonstandardactions'
+  AdditionalAllowedActions: []
+  Enabled: false
+  StandardActions:
+    - index
+    - show
+    - new
+    - edit
+    - create
+    - update
+    - destroy
+  Include:
+    - 'config/routes.rb'
+
+# Betterment/HardcodedID:
+#   Description: 'Detects hardcoded IDs in specs'
+#   StyleGuide: '#bettermenthardcodedid'
+#   AutoCorrect: false
+#   SafeAutoCorrect: false

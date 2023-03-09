@@ -1,5 +1,6 @@
 require:
   - rubocop-rails
+  - rubocop/cop/betterment.rb
 Rails:
   Enabled: true
 Rails/HasAndBelongsToMany:
@@ -24,3 +25,9 @@ Rails/ActionOrder:
    - edit
    - update
    - destroy
+
+Rails/I18nLazyLookup:
+  Enabled: false
+
+Rails/HttpStatus:
+  Enabled: false
