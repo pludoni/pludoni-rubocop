@@ -25,6 +25,7 @@ inherit_gem:
   pludoni-rubocop:
     - default.yml
     - rails.yml
+    - betterlint.yml
 ```
 
 If you have a ``.codeclimate.yml`` change it to match the Rubocop version:
@@ -34,7 +35,7 @@ If you have a ``.codeclimate.yml`` change it to match the Rubocop version:
 plugins:
   rubocop:
     enabled: true
-    channel: rubocop-1-37
+    channel: rubocop-1-48
 ```
 
 ## License
