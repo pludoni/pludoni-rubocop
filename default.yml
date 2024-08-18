@@ -3,7 +3,7 @@ require:
   - rubocop-performance
 AllCops:
   NewCops: enable
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.3
   Exclude:
     - 'bin/*'
     - 'scripts/**/*'
@@ -33,48 +33,15 @@ Style/Alias:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Lint/UnusedMethodArgument:
-  Enabled: false
-Metrics/ModuleLength:
-  Enabled: false
 Style/StringLiterals:
   Enabled: false
 Style/IfUnlessModifier:
   Enabled: false
-Metrics/MethodLength:
-  Enabled: false
-Layout/LineLength:
-  Max: 150
-  Exclude:
-    - spec/**/*
-Metrics/AbcSize:
-  Enabled: false
-Metrics/ClassLength:
-  Enabled: false
-Layout/DotPosition:
-  Enabled: false
 Style/BlockDelimiters:
   Enabled: false
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
-Layout/HashAlignment:
-  EnforcedHashRocketStyle:
-    - key
-    - table
-  EnforcedColonStyle:
-    - key
-    - table
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-# class Admin::PageController
 Style/ClassAndModuleChildren:
   Enabled: false
-
-# asddsa == 0  -> asddsa.zero?
 Style/NumericPredicate:
-  Enabled: false
-Performance/StringReplacement:
   Enabled: false
 # ->() {}  -- lambda {|a| }
 Style/Lambda:
@@ -91,18 +58,11 @@ Style/EmptyMethod:
 # [ "700", "200" ] -> %w[w w]
 Style/WordArray:
   Enabled: false
-# RSpec nervt
-Metrics/BlockLength:
-  AllowedMethods: ['task', 'namespace', 'get', 'post', 'describe', 'context', 'specify', 'it', 'route_param', 'draw', 'register', 'register_page', 'controller', 'included', 'params', 'resource', 'with_options', 'use_cassette', 'configure', 'transaction']
-Bundler/OrderedGems:
-  Enabled: false
-# update_all, update_column
-# set_ und get_ verbote
-Naming/AccessorMethodName:
-  Enabled: false
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/TrailingCommaInArguments:
   Enabled: false
 Style/SymbolArray:
   Enabled: false
@@ -112,31 +72,13 @@ Style/FormatString:
   Enabled: false
 Style/FormatStringToken:
   Enabled: false
-Metrics/PerceivedComplexity:
+Style/RedundantArgument:
   Enabled: false
-Style/DoubleNegation:
+Style/EndlessMethod:
   Enabled: false
-Style/ZeroLengthPredicate:
+Style/NegatedIf:
   Enabled: false
-Style/SafeNavigation:
-  Enabled: false
-Lint/MissingCopEnableDirective:
-  Enabled: false
-Naming/MemoizedInstanceVariableName:
-  EnforcedStyleForLeadingUnderscores: optional
-Style/NonNilCheck:
-  Enabled: false
-Style/RedundantSelf:
-  Enabled: false
-Layout/ArgumentAlignment:
-  Enabled: false
-Layout/MultilineMethodCallBraceLayout:
-  Enabled: false
-Layout/EmptyLineAfterGuardClause:
-  Enabled: false
-Lint/MissingSuper:
-  Enabled: false
-Naming/PredicateName:
+Style/QuotedSymbols:
   Enabled: false
 Style/ClassVars:
   Enabled: false
@@ -146,15 +88,85 @@ Style/NumericLiterals:
   Enabled: false
 Style/SymbolProc:
   Enabled: false
+Style/NonNilCheck:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/ZeroLengthPredicate:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 150
+  Exclude:
+    - spec/**/*
+Layout/DotPosition:
+  Enabled: false
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/HashAlignment:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/ArgumentAlignment:
+  Enabled: false
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: false
-Performance/Casecmp:
+
+Metrics/ModuleLength:
   Enabled: false
-Lint/SuppressedException:
+Metrics/MethodLength:
   Enabled: false
-Style/NegatedIf:
+Metrics/AbcSize:
   Enabled: false
-Style/QuotedSymbols:
+Metrics/ClassLength:
+  Enabled: false
+Metrics/BlockLength:
+  AllowedMethods: ['task', 'namespace', 'get', 'post', 'describe', 'context', 'specify', 'it', 'route_param', 'draw', 'register', 'register_page', 'controller', 'included', 'params', 'resource', 'with_options', 'use_cassette', 'configure', 'transaction']
+Metrics/PerceivedComplexity:
   Enabled: false
 Metrics/ParameterLists:
   CountKeywordArgs: false
+  Exclude:
+    - "app/graphql/types/**/*.rb"
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Performance/StringReplacement:
+  Enabled: false
+Performance/Casecmp:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: optional
+Naming/PredicateName:
+  Enabled: false
+Lint/DuplicateBranch:
+  IgnoreLiteralBranches: true
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+Lint/UnusedMethodArgument:
+  Enabled: false
+Lint/MissingCopEnableDirective:
+  Enabled: false
+Lint/MissingSuper:
+  Exclude:
+    - app/views/components/**/*.rb
+Lint/SuppressedException:
+  Enabled: false

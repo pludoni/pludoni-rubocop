@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "pludoni-rubocop"
-  spec.version = "1.48.0"
+  spec.version = "1.62.0"
   spec.authors = ["Stefan Wienert"]
   spec.email = ["info@stefanwienert.de"]
 
@@ -25,8 +25,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'rubocop', '~> 1.48.0'
-  spec.add_dependency 'rubocop-rails', '~> 2.18.0'
-  spec.add_dependency 'rubocop-performance', '~> 1.16.0'
-  spec.add_dependency "betterlint", "~> 1.4.0"
+  spec.add_dependency 'rubocop', '~> 1.62.0'
+  spec.add_dependency 'rubocop-rails', '~> 2.24.0'
+  spec.add_dependency 'rubocop-performance', '~> 1.21.1'
+  spec.add_dependency "betterlint", "~> 1.13.0"
 end
