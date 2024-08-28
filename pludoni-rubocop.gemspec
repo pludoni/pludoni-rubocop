@@ -26,8 +26,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # betterlint requires 1.62
-  spec.add_dependency "betterlint", "~> 1.13.0"
-  spec.add_dependency 'rubocop', '~> 1.62.0'
-  spec.add_dependency 'rubocop-rails', '~> 2.24.0'
-  spec.add_dependency 'rubocop-performance', '~> 4.21.1'
+  # spec.add_dependency "betterlint", "~> 1.13.0"
+  spec.add_dependency 'rubocop', '~> 1.64.0'
+  spec.add_dependency 'rubocop-rails', '~> 2.26.0'
+  spec.add_dependency 'rubocop-performance'
 end
