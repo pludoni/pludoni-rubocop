@@ -25,8 +25,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # betterlint requires 1.62
+  spec.add_dependency "betterlint", "~> 1.13.0"
   spec.add_dependency 'rubocop', '~> 1.62.0'
   spec.add_dependency 'rubocop-rails', '~> 2.24.0'
-  spec.add_dependency 'rubocop-performance', '~> 1.21.1'
-  spec.add_dependency "betterlint", "~> 1.13.0"
+  spec.add_dependency 'rubocop-performance', '~> 4.21.1'
 end

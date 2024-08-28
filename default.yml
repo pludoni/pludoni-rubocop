@@ -75,7 +75,7 @@ Style/FormatStringToken:
 Style/RedundantArgument:
   Enabled: false
 Style/EndlessMethod:
-  Enabled: false
+  Enabled: allow_always
 Style/NegatedIf:
   Enabled: false
 Style/QuotedSymbols:
