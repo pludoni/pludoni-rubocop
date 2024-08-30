@@ -31,3 +31,48 @@ Rails/HttpStatus:
 
 Rails/EnumSyntax:
   Enabled: true
+
+
+# support packs
+Rails/EnumHash:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/EnumSyntax:
+  Enabled: true
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/ActiveRecordOverride:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/EnumUniqueness:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/HasManyOrHasOneDependent:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/InverseOf:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/ReadWriteAttribute:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/RedundantAllowNil:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/ScopeArgs:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb
+Rails/Validation:
+  Include:
+    - app/models/**/*.rb
+    - packs/*/app/models/**/*.rb

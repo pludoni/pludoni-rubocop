@@ -106,6 +106,8 @@ Layout/LineLength:
     - spec/**/*
 Layout/DotPosition:
   Enabled: false
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 Layout/HashAlignment:
