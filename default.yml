@@ -99,6 +99,8 @@ Style/ZeroLengthPredicate:
   Enabled: false
 Style/SafeNavigation:
   Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
 
 Layout/LineLength:
   Max: 150

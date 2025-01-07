@@ -29,11 +29,6 @@ Rails/I18nLazyLookup:
 Rails/HttpStatus:
   Enabled: false
 
-Rails/EnumSyntax:
-  Enabled: true
-
-
-# support packs
 Rails/EnumHash:
   Enabled: true
   Include:

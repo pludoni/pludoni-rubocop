@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    pludoni-rubocop (1.62.0)
-      rubocop (~> 1.68.0)
+    pludoni-rubocop (1.69.0)
+      rubocop (~> 1.69.2)
       rubocop-performance
-      rubocop-rails (~> 2.27.0)
+      rubocop-rails (~> 2.28.0)
 
 GEM
   remote: https://rubygems.org/
@@ -43,23 +43,23 @@ GEM
     rack (3.1.8)
     rainbow (3.1.1)
     rake (13.2.1)
-    regexp_parser (2.9.2)
-    rubocop (1.68.0)
+    regexp_parser (2.10.0)
+    rubocop (1.69.2)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.4, < 3.0)
-      rubocop-ast (>= 1.32.2, < 2.0)
+      regexp_parser (>= 2.9.3, < 3.0)
+      rubocop-ast (>= 1.36.2, < 2.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.36.1)
+      unicode-display_width (>= 2.4.0, < 4.0)
+    rubocop-ast (1.37.0)
       parser (>= 3.3.1.0)
     rubocop-performance (1.23.0)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rails (2.27.0)
+    rubocop-rails (2.28.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.52.0, < 2.0)

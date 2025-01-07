@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "pludoni-rubocop"
-  spec.version = "1.62.0"
+  spec.version = "1.69.0"
   spec.authors = ["Stefan Wienert"]
   spec.email = ["info@stefanwienert.de"]
 
@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
 
   # betterlint requires 1.62
   # spec.add_dependency "betterlint", "~> 1.13.0"
-  spec.add_dependency 'rubocop', '~> 1.68.0'
-  spec.add_dependency 'rubocop-rails', '~> 2.27.0'
+  spec.add_dependency 'rubocop', '~> 1.69.2'
+  spec.add_dependency 'rubocop-rails', '~> 2.28.0'
   spec.add_dependency 'rubocop-performance'
 end
